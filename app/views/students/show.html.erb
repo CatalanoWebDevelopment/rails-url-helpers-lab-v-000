@@ -4,4 +4,5 @@
   <p><% link_to 'Deactivate', activate_student_path(@student) %></p>
 <% else %>]
   <h3> This student is currently inactive.</h3>
+  <p><% link_to 'Activate', activate_student_path(@student) %></p>
 <% end %>
