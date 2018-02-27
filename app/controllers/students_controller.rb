@@ -11,7 +11,6 @@ class StudentsController < ApplicationController
 
   def activate
     @student.update(active: !@student.active)
-    @student.save
   end
 
   private
