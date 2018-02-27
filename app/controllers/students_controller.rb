@@ -6,12 +6,10 @@ class StudentsController < ApplicationController
   end
 
   def show
-    set_student
     @student
   end
 
   def activate
-    set_student
     @student.update(active: !@student.active)
     @student.save
   end
