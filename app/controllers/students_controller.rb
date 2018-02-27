@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def activate
     set_student.active = true
-    set_student.update
+    set_student.update(:active)
     set_student.save
   end
 
